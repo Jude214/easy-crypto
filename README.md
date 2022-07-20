@@ -1,27 +1,27 @@
-### easy-crypto
+### easy-jsencrypt
 A simple encryptor based on jsencrypt and js-base64
 
 ### Install
 ```shell
-$ npm install --save easy-crypto
+$ npm install --save easy-jsencrypt
 ```
 
 ### Usage
 ## as ES6 Module
 ```
-import easyCrypto from 'easy-crypto'
+import easyEncrypt from 'easy-jsencrypt'
 ```
 
 ## node.js (commonjs)
 ```
-const easyCrypto = require('easy-crypto')
+const easyEncrypt = require('easy-jsencrypt')
 ```
 
 ## example
 ```
-import easyCrypto from 'easy-crypto'
+import easyEncrypt from 'easy-jsencrypt'
 let test = '123456'
-let cryptor = new easyCrypto()
+let cryptor = new easyEncrypt()
 let encrypted = cryptor.encrypt(test)
 // encrypted result like this:
 // a2RFR2tZeFVZSUtNVkFsNHZHTEVrdzk0T1FJalM3SDhBTGkrdWRtSCtpRlNaeE8vNXZPZDIvZVRlN2ZTWVZVeHhvU3RSQzIrR3JzNUZTdTF5eUxGYlVTN244S0J1TVBnPT0=

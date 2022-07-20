@@ -2,38 +2,39 @@
   "name": "easy-jsencrypt",
   "version": "1.0.0",
   "description": "a simple encryptor based on jsencrypt and js-base64",
-  "main": "./dist/easy-crypto.js",
+  "main": "./dist/easy-jsencrypt.js",
   "exports": {
     "node": {
-      "import": "./dist/easy-crypto.js",
-      "export": "./dist/easy-crypto.js"
+      "import": "./dist/easy-jsencrypt.js",
+      "export": "./dist/easy-jsencrypt.js"
     },
-    "default": "./dist/easy-crypto.global.js"
+    "default": "./dist/easy-jsencrypt.global.js"
   },
   "files": [
     "dist",
     "example"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rollup -c -w",
     "dev": "rollup -c -w",
     "build": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jude214/easy-crypto.git"
+    "url": "git+https://github.com/Jude214/easy-jsencrypt.git"
   },
   "keywords": [
     "js-base64",
     "jsencrypt",
-    "加密解密"
+    "加密",
+    "解密"
   ],
   "author": "Jude",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jude214/easy-crypto/issues"
+    "url": "https://github.com/Jude214/easy-jsencrypt/issues"
   },
-  "homepage": "https://github.com/Jude214/easy-crypto#readme",
+  "homepage": "https://github.com/Jude214/easy-jsencrypt#readme",
   "dependencies": {
     "js-base64": "^3.7.2",
     "jsencrypt": "^3.2.1"

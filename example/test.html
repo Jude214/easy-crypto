@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-  <title>EasyCrypto</title>
+  <title>Easy-JSEncrypt</title>
   <style>
     html, body {
       height: 100%;
@@ -32,7 +32,7 @@
   </style>
   <script src="./base64.js"></script>
   <script src="./jsencrypt.js"></script>
-  <script src="../dist/easy-crypto.if.js"></script>
+  <script src="../dist/easy-jsencrypt.if.js"></script>
 </head>
 
 <body>
@@ -47,8 +47,7 @@
     <textarea id="dec" name="dec" type="text" rows=6 cols=100 placeholder="解密结果"></textarea>
   </div>
   <script type="text/javascript">
-    console.log('测试', EasyCrypto)
-    const cryptor = window.EasyCrypto ? new EasyCrypto() : null
+    const cryptor = window.EasyEncrypt ? new EasyEncrypt() : null
     function encryptTest() {
       if (cryptor) {
         let str = document.getElementById('origin').value

@@ -13,15 +13,15 @@ export default {
       name: 'CJS',
       exports: 'default'
     }, {
-      file: 'dist/easy-crypto.if.js',
+      file: 'dist/easy-jsencrypt.if.js',
       format: 'iife',
-      name: 'EasyCrypto'
+      name: 'EasyEncrypt'
     }, {
-      file: 'dist/easy-crypto.global.js',
+      file: 'dist/easy-jsencrypt.global.js',
       format: 'umd',
-      name: 'EasyCrypto'
+      name: 'EasyEncrypt'
     }, {
-      file: 'dist/easy-crypto.es.js',
+      file: 'dist/easy-jsencrypt.es.js',
       format: 'es',
       name: 'ES'
     }
