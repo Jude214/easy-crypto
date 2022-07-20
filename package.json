@@ -1,0 +1,44 @@
+{
+  "name": "easy-crypto",
+  "version": "1.0.0",
+  "description": "a simple encryptor based on jsencrypt and js-base64",
+  "main": "./dist/easy-crypto.js",
+  "exports": {
+    "node": {
+      "import": "./dist/easy-crypto.js",
+      "export": "./dist/easy-crypto.js"
+    },
+    "default": "./dist/easy-crypto.global.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jude214/easy-crypto.git"
+  },
+  "keywords": [
+    "js-base64",
+    "jsencrypt",
+    "加密解密"
+  ],
+  "author": "Jude",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jude214/easy-crypto/issues"
+  },
+  "homepage": "https://github.com/Jude214/easy-crypto#readme",
+  "dependencies": {
+    "js-base64": "^3.7.2",
+    "jsencrypt": "^3.2.1"
+  },
+  "devDependencies": {
+    "rollup": "^2.77.0",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-serve": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-watch": "^4.3.1"
+  }
+}

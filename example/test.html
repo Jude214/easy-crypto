@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>EasyCrypto</title>
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-size: 14px;
+      margin: 0;
+    }
+    .test {
+      margin: 30px 20px 0;
+    }
+    .title {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .action {
+      background: #459BFF;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+  <script src="./base64.js"></script>
+  <script src="./jsencrypt.js"></script>
+  <script src="../dist/easy-crypto.if.js"></script>
+</head>
+
+<body>
+  <div class="test">
+    <label for="origin" class="title">Text to encrypt:</label><br/>
+    <textarea id="origin" name="origin" type="text" rows=6 cols=100>D123456789</textarea><br/>
+    <input type="button" class="action" value="encrypt text" onclick="encryptTest()"/><br/>
+    <label for="enc" class="title">Encrypt result:</label><br/>
+    <textarea id="enc" name="enc" type="text" rows=10 cols=100 disabled placeholder="加密结果"></textarea><br/>
+    <input type="button" class="action" value="decrypt text" onclick="decryptTest()"/><br/>
+    <label for="dec" class="title">Decrypt result:</label><br/>
+    <textarea id="dec" name="dec" type="text" rows=6 cols=100 placeholder="解密结果"></textarea>
+  </div>
+  <script type="text/javascript">
+    console.log('测试', EasyCrypto)
+    const cryptor = window.EasyCrypto ? new EasyCrypto() : null
+    function encryptTest() {
+      if (cryptor) {
+        let str = document.getElementById('origin').value
+        let res = cryptor.encrypt(str)
+        document.getElementById('enc').value = res
+      }
+    }
+    function decryptTest() {
+      if (cryptor) {
+        let estr = document.getElementById('enc').value
+        document.getElementById('dec').value = cryptor.decrypt(estr)
+      }
+    } 
+  </script>
+</body>
+</html>
