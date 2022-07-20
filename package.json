@@ -10,6 +10,7 @@
     },
     "default": "./dist/easy-crypto.global.js"
   },
+  "files": ["dist","example"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c -w",
