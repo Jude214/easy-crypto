@@ -5,7 +5,7 @@ import { terser } from 'rollup-plugin-terser'
 const pkg = require('./package.json')
 
 export default {
-  input: './index.js',
+  input: './src/index.js',
   output: [
     {
       file: pkg.main,
