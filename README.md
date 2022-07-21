@@ -4,6 +4,7 @@ A simple encryptor based on jsencrypt and js-base64
 一个基于jsencrypt和js-base64的简易加密解密包。包内自带一对RSA公钥私钥。
 
 简易使用：
+
 传输方使用包的 encrypt 方法对原始数据进行加密后传输，避免敏感数据明文传输；
 
 接收方使用包的 decrypt 方法对加密字符串或对象进行解密可得到原始数据。
