@@ -27,7 +27,8 @@
     "js-base64",
     "jsencrypt",
     "加密",
-    "解密"
+    "解密",
+    "加密解密"
   ],
   "author": "Jude",
   "license": "MIT",
