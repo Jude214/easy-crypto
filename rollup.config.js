@@ -1,4 +1,4 @@
-// import clear from 'rollup-plugin-clear'
+import clear from 'rollup-plugin-clear'
 import babel from 'rollup-plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 import server from 'rollup-plugin-serve'
