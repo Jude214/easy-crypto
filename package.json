@@ -1,6 +1,6 @@
 {
   "name": "easy-jsencrypt",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "a simple encryptor based on jsencrypt and js-base64",
   "main": "./dist/easy-jsencrypt.js",
   "exports": {
